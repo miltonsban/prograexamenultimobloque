@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/archivo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <header>
+        <center>
+  
+                      <a href="index.html"> <img class="coca" src="img/logotipo.png" alt="logotipo"></a>
+
+
+    </center>
+     </header>
+    <div class="barras">
+        <button onclick="abrir_cerrar_menu()" class='boton_menu' id='x'></button> 
+    </div>
+    <nav id="menu" class="desplegable">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="productos.html">productos</a></li>
+            <li><a href="ofertas.html">combos</a></li>
+            <li><a href="masinfo.html">iniciar sesion</a></li>
+        </ul>
+    </nav>
+ </header>
+ <h1>¡Inicia sesion y no te pierdas de nuestras ofertas semanales!</h1>
+    <hr noshade="2" >
+    <script src="main.js"></script>
+    <main>
+  <form action="https://formspree.io/f/xnnbareo" method="POST" class="formulario">
+  
+  <input type="hidden" name="_subject" value="nuevos datos de usuario">
+
+  <div class="contenidoform">
+    <label>Nombre:</label>
+    <input type="text" name="nombre" required>
+  </div>
+
+  <div class="contenidoform">
+    <label>Apellido:</label>
+    <input type="text" name="apellido" required>
+  </div>
+
+  <div class="contenidoform">
+    <label>Dirección:</label>
+    <input type="text" name="direccion" required>
+  </div>
+  <div class="contenidoform">
+    <label>correo :</label>
+    <input type="email" name="correo" required>
+  </div>
+
+  <div class="contenidoform">
+    <label>Sexo:</label>
+    <label><input type="radio" name="sexo" value="masculino" required> Masculino</label>
+    <label><input type="radio" name="sexo" value="femenino" required> Femenino</label>
+    <label><input type="radio" name="sexo" value="otros" required> Otros</label>
+  </div>
+
+  <div class="contenidoform">
+    <label>Descuento por edad:</label>
+    <table class="descuentos">
+      <tr><td><label><input type="radio" name="descuento" value="10" required>&lt; 18 Descuento 10</label></td></tr>
+      <tr><td><label><input type="radio" name="descuento" value="9" required>&gt; 18 Descuento 9</label></td></tr>
+      <tr><td><label><input type="radio" name="descuento" value="10" required>&lt; 40 Descuento 10</label></td></tr>
+      <tr><td><label><input type="radio" name="descuento" value="25" required>&gt; 50 Descuento 25</label></td></tr>
+    </table>
+  </div>
+
+  <div class="contenidoform">
+    <label>Fecha de Nacimiento:</label>
+    <input type="date" name="fecha_nacimiento" required>
+  </div>
+
+  <button type="submit">Enviar</button>
+</form>
+
+
+    </main>
+    <hr noshade="2" >
+    <footer class="pie">
+      <p>© 2025 Todos los derechos reservados </p>
+        <p>Sitio creado por Milton Alexander Saba marroquin </p>
+        <p>Estudiante de 6to Administración en el instituto IPC</p
+    </footer>
+</body>
+</html>
